@@ -4,7 +4,7 @@ import { useState } from "react"
 function Nav() {
   const [showMenu, setShowMenu] = useState(false)
   return (
-        <header className="fixed mt-4 top-0 w-full">
+        <header className="fixed mt-4 top-0 w-full z-10">
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
             <div className="relative flex h-16 items-center justify-between bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border border-gray-100">
               <div className="absolute inset-y-0 right-0 flex items-center sm:hidden">
