@@ -1,8 +1,20 @@
 import Image from "next/image"
+import Link from "next/link"
+import { useParams, usePathname, useRouter, useSearchParams } from "next/navigation"
 import { useState } from "react"
 
 function Nav() {
   const [showMenu, setShowMenu] = useState(false)
+  const [currentMenu, setCurrentMenu] = useState({
+    home: false,
+    openSource: false,
+    about: false,
+    division: false,
+    event: false,
+    joinUs: false,
+  })
+  const router= useParams()
+  console.log(router);
   return (
         <header className="fixed mt-4 top-0 w-full z-10">
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -27,12 +39,64 @@ function Nav() {
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                 <div className="hidden sm:ml-6 sm:block">
                   <div className="flex space-x-4">
-                    <a href="#" className="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Home</a>
-                    <a href="#" className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Open Source</a>
-                    <a href="#" className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">About</a>
-                    <a href="#" className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Division</a>
-                    <a href="#" className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Event</a>
-                    <a href="#" className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Join Us</a>
+                    <Link href="/" 
+                    onClick={()=>setCurrentMenu({
+                      home: true,
+                      openSource: false,
+                      about: false,
+                      division: false,
+                      event: false,
+                      joinUs: false,
+                    })} 
+                    className={`${currentMenu.home ? 'bg-gray-900': ''} text-white rounded-md px-3 py-2 text-sm font-medium`} aria-current="page">Home</Link>
+                    <Link href="#openSource" 
+                    onClick={()=>setCurrentMenu({
+                      home: false,
+                      openSource: true,
+                      about: false,
+                      division: false,
+                      event: false,
+                      joinUs: false,
+                    })} 
+                    className={`${currentMenu.openSource ? 'bg-gray-900': ''} text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium`}>Open Source</Link>
+                    <Link href="#about" 
+                    onClick={()=>setCurrentMenu({
+                      home: false,
+                      openSource: false,
+                      about: true,
+                      division: false,
+                      event: false,
+                      joinUs: false,
+                    })} 
+                    className={`${currentMenu.about ? 'bg-gray-900': ''} text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium`}>About</Link>
+                    <Link href="#division" 
+                    onClick={()=>setCurrentMenu({
+                      home: false,
+                      openSource: false,
+                      about: false,
+                      division: true,
+                      event: false,
+                      joinUs: false,
+                    })} 
+                    className={`${currentMenu.division ? 'bg-gray-900': ''} text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium`}>Division</Link>
+                    <Link href="#event" 
+                    onClick={()=>setCurrentMenu({
+                      home: false,
+                      openSource: false,
+                      about: false,
+                      division: false,
+                      event: true,
+                      joinUs: false,
+                    })} className={`${currentMenu.event ? 'bg-gray-900': ''} text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium`}>Event</Link>
+                    <Link href="#joinUs" 
+                    onClick={()=>setCurrentMenu({
+                      home: false,
+                      openSource: false,
+                      about: false,
+                      division: false,
+                      event: false,
+                      joinUs: true,
+                    })} className={`${currentMenu.joinUs ? 'bg-gray-900': ''} text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium`}>Join Us</Link>
                   </div>
                 </div>
               </div>
@@ -40,14 +104,68 @@ function Nav() {
           </div>
 
         
-          <div className={`${showMenu? 'block' : 'hidden'} sm:hidden`}>
-            <div className="space-y-1 px-2 pb-3 pt-2">
-              <a href="#" className="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium" aria-current="page">Home</a>
-              <a href="#" className="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Open Source</a>
-              <a href="#" className="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">About</a>
-              <a href="#" className="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Division</a>
-              <a href="#" className="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Event</a>
-              <a href="#" className="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Join Us</a>
+          <div className={`${showMenu? 'block' : 'hidden'} sm:hidden `}>
+            <div className="space-y-1 px-2 pb-3 pt-2 mx-2 bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border-l border-r border-b border-gray-100">
+              <Link href="/" 
+              onClick={()=>setCurrentMenu({
+                      home: true,
+                      openSource: false,
+                      about: false,
+                      division: false,
+                      event: false,
+                      joinUs: false,
+                    })} 
+                    className={`${currentMenu.home ? 'bg-gray-900': ''} text-white block rounded-md px-3 py-2 text-base font-medium" aria-current="page`}>Home</Link>
+              <Link href="#openSource" 
+              onClick={()=>setCurrentMenu({
+                      home: false,
+                      openSource: true,
+                      about: false,
+                      division: false,
+                      event: false,
+                      joinUs: false,
+                    })} 
+                    className={`${currentMenu.openSource ? 'bg-gray-900': ''} text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium`}>Open Source</Link>
+              <Link href="#about" 
+              onClick={()=>setCurrentMenu({
+                      home: false,
+                      openSource: false,
+                      about: true,
+                      division: false,
+                      event: false,
+                      joinUs: false,
+                    })} 
+                    className={`${currentMenu.about ? 'bg-gray-900': ''} text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium`}>About</Link>
+              <Link href="#division" 
+              onClick={()=>setCurrentMenu({
+                      home: false,
+                      openSource: false,
+                      about: false,
+                      division: true,
+                      event: false,
+                      joinUs: false,
+                    })} 
+                    className={`${currentMenu.division ? 'bg-gray-900': ''} text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium`}>Division</Link>
+              <Link href="#event" 
+              onClick={()=>setCurrentMenu({
+                      home: false,
+                      openSource: false,
+                      about: false,
+                      division: false,
+                      event: true,
+                      joinUs: false,
+                    })} 
+                    className={`${currentMenu.event ? 'bg-gray-900': ''} text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium`}>Event</Link>
+              <Link href="#joinUs" 
+              onClick={()=>setCurrentMenu({
+                      home: false,
+                      openSource: false,
+                      about: false,
+                      division: false,
+                      event: false,
+                      joinUs: true,
+                    })} 
+                    className={`${currentMenu.joinUs ? 'bg-gray-900': ''} text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium`}>Join Us</Link>
             </div>
           </div>
         </header>
