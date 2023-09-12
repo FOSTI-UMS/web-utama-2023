@@ -31,6 +31,9 @@ export default function Root() {
         <meta property="webcrawlers" content="all"/>
         <meta property="spiders" content="all"/>
         <meta property="robots" content="all"/>
+        <style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap');
+</style>
       </Head>
     <Image fill={true} objectFit="cover" className="-z-10" src="/bg/bg.svg" alt="Bg"/>
     <Nav/>
