@@ -1,6 +1,5 @@
 import Image from "next/image"
 import Link from "next/link"
-import { useParams, usePathname, useRouter, useSearchParams } from "next/navigation"
 import { useState } from "react"
 
 function Nav() {
@@ -13,8 +12,6 @@ function Nav() {
     event: false,
     joinUs: false,
   })
-  const router= useParams()
-  console.log(router);
   return (
         <header className="fixed mt-4 top-0 w-full z-10">
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">

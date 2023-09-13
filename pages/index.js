@@ -1,7 +1,6 @@
 import Footer from "@/components/footer";
 import Nav from "@/components/nav";
 import Home from "@/components/home";
-import Image from "next/image";
 import Head from "next/head";
 import OpenSource from "@/components/openSource";
 import About from "@/components/about";
@@ -28,9 +27,6 @@ export default function Root() {
         <meta property="webcrawlers" content="all"/>
         <meta property="spiders" content="all"/>
         <meta property="robots" content="all"/>
-        <style> 
-          @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap');
-        </style>
       </Head>
       <div className="snap-y snap-mandatory w-full h-screen overflow-y-scroll">
         <Nav/>
