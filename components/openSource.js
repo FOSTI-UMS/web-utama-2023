@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function OpenSource() {
   return (
-    <div className='min-h-screen relative flex flex-col justify-center items-center' id="openSource">
+    <div className='snap-center min-h-screen relative flex flex-col justify-center items-center' id="openSource">
       <Image fill={true} objectFit="cover" className="-z-10" src="/bg/bg-dark.svg" alt="Bg"/>
       <div className="lg:min-h-screen relative container flex flex-col lg:flex-row justify-center items-center text-white lg:px-10 ">
       <div className="flex justify-center items-center flex-col lg:w-1/2 w-screen lg:min-h-screen lg:mb-0 mb-10">

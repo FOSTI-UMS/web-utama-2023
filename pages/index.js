@@ -31,10 +31,11 @@ export default function Root() {
         <meta property="webcrawlers" content="all"/>
         <meta property="spiders" content="all"/>
         <meta property="robots" content="all"/>
-        <style>
+        <style> 
           @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap');
         </style>
       </Head>
+      <div className="snap-y snap-mandatory w-full h-screen overflow-y-scroll">
         <Nav/>
         <Home/>
         <OpenSource/>
@@ -43,6 +44,7 @@ export default function Root() {
         <Event/>
         <JoinUs/>
         <Footer />
+      </div>
       </>
   )
 }
