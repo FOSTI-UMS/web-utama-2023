@@ -10,9 +10,6 @@ import JoinUs from "@/components/joinUs";
 import Event from "@/components/event";
 
 export default function Root() {
-  const handleScroll =(e)=>{
-    console.log(e);
-  }
   return (
     <>
       <Head>
