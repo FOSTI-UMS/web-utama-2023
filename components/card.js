@@ -37,14 +37,16 @@ function Card({name, title, description}) {
   }
   return (
     <>
-      <div className="flex flex-col justify-center items-center max-w-lg mx-auto my-10 rounded-3xl py-10 px-5 w-72 bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border border-gray-100">
-        <Image src={`/shape/${name}.svg`} height={50} width={50} alt={title} />
-        <div className="text-center text-base font-medium my-3">{title}</div>
+      <div className="flex flex-col justify-center items-center max-w-lg mx-auto my-5 sm:my-0 rounded-3xl py-3 px-2 sm:py-10 sm:px-5 w-72 bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border border-gray-100">
+        <div className='relative w-8 sm:w-10 h-8 sm:h-10'>
+          <Image src={`/shape/${name}.svg`} fill={true} objectFit="cover" alt={title} />
+        </div>
+        <div className="text-center text-base font-medium my-1 sm:my-3">{title}</div>
         <div className="text-center font-light mt-1 text-xs mb-3">{description}</div>
         <button 
         onClick={()=>openModal(name)}
-        className="text-xs font-medium text-[#7A9D54]">
-          Selengkapnya <span className="text-lg">{"→"}</span>
+        className="text-xs font-medium bg-brand-orange text-white px-4 py-1 rounded-md flex items-center">
+          Selengkapnya
         </button>
       </div>
 

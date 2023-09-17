@@ -60,7 +60,9 @@ function Footer() {
       <section className="bg-gray-800 text-white pb-2">
         <div className="container mx-auto">
           <div className="text-center">
-            <footer className="text-gray-300 flex justify-center">&copy; All rights reserved - {new Date().getFullYear()} | Created by Fosti with <Image className='invert' width={30} height={30} alt='icon fosti' src='/icon/hand.svg'/>
+            <footer className="text-gray-300 flex justify-center flex-col sm:flex-row">
+              <p>&copy; All rights reserved - {new Date().getFullYear()} </p> 
+              <p className='sm:ml-1'>| Created by Fosti with <Image className='invert inline' width={20} height={20} alt='icon fosti' src='/icon/hand.svg'/></p>
             </footer>
           </div>
         </div>

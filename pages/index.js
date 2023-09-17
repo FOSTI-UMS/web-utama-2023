@@ -28,7 +28,7 @@ export default function Root() {
         <meta property="spiders" content="all"/>
         <meta property="robots" content="all"/>
       </Head>
-      <div className="snap-y snap-mandatory w-full h-screen overflow-y-scroll">
+      <div className="snap-y w-full h-screen overflow-y-scroll">
         <Nav/>
         <Home/>
         <OpenSource/>

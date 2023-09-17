@@ -24,7 +24,7 @@ export default function Event() {
             <Image className="me-3" src="/shape/place.svg" width={20} height={20} alt="date" />
             <div>Tempat : Gedung J Seminar 2</div>
           </div>
-          <Link href={'https://fostifest.fostiums.org/'} target="_blank" className="text-white font-normal w-52 text-sm rounded-md py-2 px-8 bg-[#EB916B] hover:bg-[#f08557]">Selengkapnya</Link>
+          <Link href={'https://fostifest.fostiums.org/'} target="_blank" className="text-white font-normal text-sm rounded-md w-fit py-2 px-8 bg-brand-orange hover:bg-[#f08557]">Selengkapnya</Link>
         </div>
         <div className="w-1/2 lg:min-h-screen flex justify-end items-center">
           <Image src="/shape/event.png" height={350} width={350} alt="about" />
