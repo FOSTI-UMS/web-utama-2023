@@ -5,7 +5,7 @@ import { useState } from "react"
 function Nav() {
   const [showMenu, setShowMenu] = useState(false)
   const [currentMenu, setCurrentMenu] = useState({
-    home: false,
+    home: true,
     openSource: false,
     about: false,
     division: false,
@@ -36,7 +36,7 @@ function Nav() {
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                 <div className="hidden sm:ml-6 sm:block">
                   <div className="flex space-x-4">
-                    <Link href="/" 
+                    <Link href="#/" 
                     onClick={()=>setCurrentMenu({
                       home: true,
                       openSource: false,
@@ -45,7 +45,7 @@ function Nav() {
                       event: false,
                       joinUs: false,
                     })} 
-                    className={`${currentMenu.home ? 'bg-brand-orange': ''} text-slate-900 rounded-md px-3 py-2 text-sm font-medium`} aria-current="page">Home</Link>
+                    className={`${currentMenu.home ? 'bg-brand-orange': ''} ${currentMenu.home ? 'text-white': '' } text-slate-900  hover:bg-brand-orange hover:text-white rounded-md px-3 py-2 text-sm font-medium`} aria-current="page">Home</Link>
                     <Link href="#openSource" 
                     onClick={()=>setCurrentMenu({
                       home: false,
@@ -55,7 +55,7 @@ function Nav() {
                       event: false,
                       joinUs: false,
                     })} 
-                    className={`${currentMenu.openSource ? 'bg-brand-orange': ''} text-slate-700 hover:bg-brand-orange hover:text-slate-900 rounded-md px-3 py-2 text-sm font-medium`}>Open Source</Link>
+                    className={`${currentMenu.openSource ? 'bg-brand-orange': ''} ${currentMenu.openSource ? 'text-white': '' } text-slate-700 hover:bg-brand-orange hover:text-white rounded-md px-3 py-2 text-sm font-medium`}>Open Source</Link>
                     <Link href="#about" 
                     onClick={()=>setCurrentMenu({
                       home: false,
@@ -65,7 +65,7 @@ function Nav() {
                       event: false,
                       joinUs: false,
                     })} 
-                    className={`${currentMenu.about ? 'bg-brand-orange': ''} text-slate-700 hover:bg-brand-orange hover:text-slate-900 rounded-md px-3 py-2 text-sm font-medium`}>About</Link>
+                    className={`${currentMenu.about ? 'bg-brand-orange': ''} ${currentMenu.about ? 'text-white': '' } text-slate-700 hover:bg-brand-orange hover:text-white rounded-md px-3 py-2 text-sm font-medium`}>About</Link>
                     <Link href="#division" 
                     onClick={()=>setCurrentMenu({
                       home: false,
@@ -75,7 +75,7 @@ function Nav() {
                       event: false,
                       joinUs: false,
                     })} 
-                    className={`${currentMenu.division ? 'bg-brand-orange': ''} text-slate-700 hover:bg-brand-orange hover:text-slate-900 rounded-md px-3 py-2 text-sm font-medium`}>Division</Link>
+                    className={`${currentMenu.division ? 'bg-brand-orange': ''} ${currentMenu.division ? 'text-white': '' } text-slate-700 hover:bg-brand-orange hover:text-white rounded-md px-3 py-2 text-sm font-medium`}>Division</Link>
                     <Link href="#event" 
                     onClick={()=>setCurrentMenu({
                       home: false,
@@ -84,7 +84,7 @@ function Nav() {
                       division: false,
                       event: true,
                       joinUs: false,
-                    })} className={`${currentMenu.event ? 'bg-brand-orange': ''} text-slate-700 hover:bg-brand-orange hover:text-slate-900 rounded-md px-3 py-2 text-sm font-medium`}>Event</Link>
+                    })} className={`${currentMenu.event ? 'bg-brand-orange': ''} ${currentMenu.event ? 'text-white': '' } text-slate-700 hover:bg-brand-orange hover:text-white rounded-md px-3 py-2 text-sm font-medium`}>Event</Link>
                     <Link href="#joinUs" 
                     onClick={()=>setCurrentMenu({
                       home: false,
@@ -93,7 +93,7 @@ function Nav() {
                       division: false,
                       event: false,
                       joinUs: true,
-                    })} className={`${currentMenu.joinUs ? 'bg-brand-orange': ''} text-slate-700 hover:bg-brand-orange hover:text-slate-900 rounded-md px-3 py-2 text-sm font-medium`}>Join Us</Link>
+                    })} className={`${currentMenu.joinUs ? 'bg-brand-orange': ''} ${currentMenu.joinUs ? 'text-white': '' } text-slate-700 hover:bg-brand-orange hover:text-white rounded-md px-3 py-2 text-sm font-medium`}>Join Us</Link>
                   </div>
                 </div>
               </div>
@@ -122,7 +122,7 @@ function Nav() {
                       event: false,
                       joinUs: false,
                     })} 
-                    className={`${currentMenu.openSource ? 'bg-brand-orange': ''} text-slate-700 hover:bg-brand-orange hover:text-slate-900 block rounded-md px-3 py-2 text-base font-medium`}>Open Source</Link>
+                    className={`${currentMenu.openSource ? 'bg-brand-orange': ''} ${currentMenu.openSource ? 'text-white': '' } text-slate-700 hover:bg-brand-orange hover:text-white block rounded-md px-3 py-2 text-base font-medium`}>Open Source</Link>
               <Link href="#about" 
               onClick={()=>setCurrentMenu({
                       home: false,
@@ -132,7 +132,7 @@ function Nav() {
                       event: false,
                       joinUs: false,
                     })} 
-                    className={`${currentMenu.about ? 'bg-brand-orange': ''} text-slate-700 hover:bg-brand-orange hover:text-slate-900 block rounded-md px-3 py-2 text-base font-medium`}>About</Link>
+                    className={`${currentMenu.about ? 'bg-brand-orange': ''} text-slate-700 hover:bg-brand-orange hover:text-white block rounded-md px-3 py-2 text-base font-medium`}>About</Link>
               <Link href="#division" 
               onClick={()=>setCurrentMenu({
                       home: false,
@@ -142,7 +142,7 @@ function Nav() {
                       event: false,
                       joinUs: false,
                     })} 
-                    className={`${currentMenu.division ? 'bg-brand-orange': ''} text-slate-700 hover:bg-brand-orange hover:text-slate-900 block rounded-md px-3 py-2 text-base font-medium`}>Division</Link>
+                    className={`${currentMenu.division ? 'bg-brand-orange': ''} text-slate-700 hover:bg-brand-orange hover:text-white block rounded-md px-3 py-2 text-base font-medium`}>Division</Link>
               <Link href="#event" 
               onClick={()=>setCurrentMenu({
                       home: false,
@@ -152,7 +152,7 @@ function Nav() {
                       event: true,
                       joinUs: false,
                     })} 
-                    className={`${currentMenu.event ? 'bg-brand-orange': ''} text-slate-700 hover:bg-brand-orange hover:text-slate-900 block rounded-md px-3 py-2 text-base font-medium`}>Event</Link>
+                    className={`${currentMenu.event ? 'bg-brand-orange': ''} text-slate-700 hover:bg-brand-orange hover:text-white block rounded-md px-3 py-2 text-base font-medium`}>Event</Link>
               <Link href="#joinUs" 
               onClick={()=>setCurrentMenu({
                       home: false,
@@ -162,7 +162,7 @@ function Nav() {
                       event: false,
                       joinUs: true,
                     })} 
-                    className={`${currentMenu.joinUs ? 'bg-brand-orange': ''} text-slate-700 hover:bg-brand-orange hover:text-slate-900 block rounded-md px-3 py-2 text-base font-medium`}>Join Us</Link>
+                    className={`${currentMenu.joinUs ? 'bg-brand-orange': ''} text-slate-700 hover:bg-brand-orange hover:text-white block rounded-md px-3 py-2 text-base font-medium`}>Join Us</Link>
             </div>
           </div>
         </header>

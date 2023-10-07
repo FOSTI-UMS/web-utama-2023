@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="snap-center flex-col-reverse lg:flex-row min-h-screen relative flex justify-center items-center text-white lg:px-12">
+    <div className="snap-center flex-col-reverse lg:flex-row min-h-screen relative flex justify-center items-center text-white lg:px-12" id="/">
     <Image fill={true} objectFit="cover" className="-z-10" src="/bg/bg.svg" alt="Bg"/>
       <div id="hero" className="flex justify-center items-start flex-col w-screen px-3 lg:w-1/2 lg:min-h-screen lg:pt-5">
         <div className="text-xl lg:text-lg mt-12 ms-1 mb-1 font-bold ">Welcome To</div>
