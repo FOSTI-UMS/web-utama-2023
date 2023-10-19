@@ -8,8 +8,7 @@ export default function About() {
         <div className="text-[#1E3259] sm:ps-10 px-4 pt-3 sm:pt-0 sm:w-1/2 w-screen sm:min-h-screen flex flex-col justify-center sm:items-end">
           <div className="font-bold text-2xl sm:text-5xl mb-2">About Us</div>
           <div className="font-base text-base tracking-widest text-justify">
-            Open source adalah konsep pengembangan perangkat lunak di mana kode sumbernya dapat diakses oleh publik. Siapa pun bisa melihat, mengubah, dan mendistribusikannya sesuai lisensi yang ditetapkan. Komunitas open source penting
-            untuk memfasilitasi kolaborasi, pertukaran pengetahuan, mempercepat inovasi, meningkatkan transparansi dan keamanan, serta sebagai platform pengembangan akademis.{" "}
+          Forum Open Source Teknik Informatika (FOSTI) adalah Unit Kegiatan Mahasiswa di tingkat fakultas, yang tepatnya berada di bawah Fakultas Komunikasi dan Informatika UMS. FOSTI bergerak di bidang teknologi khususnya mempelajari, memperdalam, dan menyebarkan Open Source. Selain itu, FOSTI juga aktif dalam pengembangan bidang keorganisasian yang berkontribusi pada kemajuan dan pengembangan diri anggotanya.
           </div>
         </div>
         <div className="sm:w-1/2 w-64 sm:min-h-screen flex justify-center items-center">
