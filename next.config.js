@@ -5,12 +5,12 @@ const nextConfig = {
     JOIN_US_DATETIME: process.env.JOIN_US_DATETIME,
   },
   images: {
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: 'https',
         hostname: 'event.fostiums.org',
       },
-      
     ],
   },
 }
