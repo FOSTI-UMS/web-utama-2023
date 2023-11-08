@@ -29,8 +29,8 @@ function Nav() {
                 </button>
               </div>
 
-              <div className="flex flex-shrink-0 items-center p-1">
-                <Image width={80} height={80} src="/logo-fosti.png" alt="Logo Fosti"/>
+              <div className="flex flex-shrink-0 items-center p-1 w-14">
+                <Image width={100} height={100} src="/logo-fosti.webp" alt="Logo Fosti"/>
               </div>
 
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
