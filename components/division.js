@@ -22,7 +22,7 @@ export default function Division() {
 
   ]
   return (
-    <div className="snap-center min-h-screen text-center relative text-white flex lg:flex-row justify-center items-center lg:px-12" id="division">
+    <div className="snap-center min-h-screen text-center relative text-white flex lg:flex-row justify-center items-center md:py-12 lg:px-12" id="division">
       <Image fill={true} objectFit="cover" className="-z-10" src="/bg/bg-dark.svg" alt="Bg" />
       <div className="lg:flex flex-col justify-center items-center lg:flex-col lg:min-h-screen">
         <div className="font-bold text-3xl sm:text-4xl sm:mt-0 mt-6 sm:mb-6">Divisi</div>

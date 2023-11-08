@@ -79,7 +79,7 @@ export default function Event() {
   }
 
   return (
-    <div className="snap-center min-h-screen relative flex lg:flex-row justify-center items-center lg:px-12" id="event">
+    <div className="min-h-screen relative flex lg:flex-row justify-center items-center md:py-12 lg:px-12" id="event">
       <Image fill={true} objectFit="cover" className="-z-10" src="/bg/bg-light.svg" alt="Bg" />
       <div className={successFetchEvent ? "hidden" : "block"}>
         <div className="text-[#3f4042] font-medium text-lg md:text-xl text-center">{eventMessage}</div>

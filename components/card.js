@@ -37,7 +37,7 @@ function Card({name, title, description}) {
   }
   return (
     <>
-      <div className="flex flex-col justify-center items-center max-w-lg mx-auto my-5 sm:my-0 rounded-3xl py-3 px-2 sm:py-10 sm:px-5 w-72 bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border border-gray-100">
+      <div className="flex flex-col justify-center items-center max-w-lg my-5 rounded-3xl py-3 px-2 sm:py-10 sm:px-5 w-72 bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border border-gray-100">
         <div className='relative w-8 sm:w-10 h-8 sm:h-10'>
           <Image src={`/shape/${name}.svg`} fill={true} objectFit="cover" alt={title} />
         </div>
