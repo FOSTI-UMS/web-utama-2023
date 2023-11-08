@@ -19,7 +19,6 @@ function Footer() {
                 <h5 className="text-xl font-semibold mb-2">Layanan</h5>
                 <ul className="text-gray-300">
                   <li><a href="#" className="hover:text-white">Privacy & Policy</a></li>
-                  <li><a href="https://instagram.com/fosti_ums" className="hover:text-white">Event</a></li>
                 </ul>
               </div>
             </div>
@@ -41,13 +40,19 @@ function Footer() {
                 <div className="social-media">
                   <ul className="flex">
                     <li className="hover:bg-blue-500 rounded-md mr-4">
-                      <Link href="https://www.facebook.com/Fosti.Umsurakarta/"><Image className='invert' width={30} height={30} alt='icon fb fosti' src='/icon/fb.svg'/></Link>
+                      <Link href="http://instagram.com/fosti_ums"><Image className='text-white p-1' width={30} height={30} alt='Icon Instagram fosti' src='/icon/ig.svg'/></Link>
                     </li>
                     <li className="hover:bg-blue-500 rounded-md mr-4">
-                      <Link href="https://event.fostiums.org/"><Image className='invert' width={30} height={30} alt='icon ig fosti' src='/icon/ig.svg'/></Link>
+                      <Link href="https://tiktok.com/@fosti.ums"><Image className='text-white p-1' width={30} height={30} alt='Icon TikTok Fosti' src='/icon/tk.svg'/></Link>
+                    </li>
+                    <li className="hover:bg-blue-500 rounded-md mr-4">
+                      <Link href="https://www.youtube.com/@fostiums"><Image className='text-white p-1' width={30} height={30} alt='Icon YouTube Fosti' src='/icon/yt.svg'/></Link>
+                    </li>
+                    <li className="hover:bg-blue-500 rounded-md mr-4">
+                      <Link href="https://www.facebook.com/Fosti.Umsurakarta/"><Image className='text-white p-1' width={30} height={30} alt='Icon Facebook Fosti' src='/icon/fb.svg'/></Link>
                     </li>
                     <li  className="hover:bg-blue-500 rounded-md" >
-                      <Link href="https://twitter.com/fostiums"><Image className='invert' width={30} height={30} alt='icon x fosti' src='/icon/x.svg'/></Link>
+                      <Link href="https://twitter.com/fostiums"><Image className='text-white p-1' width={30} height={30} alt='Icon X Fosti' src='/icon/x.svg'/></Link>
                     </li>
                   </ul>
                 </div>

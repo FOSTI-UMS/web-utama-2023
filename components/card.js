@@ -19,19 +19,19 @@ function Card({name, title, description}) {
     if(division === 'ristek'){
       setTxtModal({
         title:'Keilmuan dan Riset Teknologi',
-        description:'Divisi yang melakukan penelitian dan pengembangan Teknologi open source yang kemudian disampaikan kepada seluruh anggota FOSTI UMS dan masyarakat umum.',
+        description:'Divisi yang melakukan penelitian, pengembangan dan pembelajaran teknologi open source yang kemudian disampaikan kepada seluruh anggota FOSTI UMS serta masyarakat umum.',
       })
     }
     else if(division === 'keor'){
       setTxtModal({
         title:'Keorganisasian',
-        description:'Divisi yang menciptakan hubungan yang erat dan menjalin kerja sama yang baik antar anggota FOSTI UMS, mengadakan pembelajaran untuk meningkatkan pengetahuan dan pemahaman tentang keorganisasian di FOSTI UMS serta mempersiapkan calon anggota baru FOSTI UMS untuk kepengurusan berikutnya.',
+        description:'Divisi yang menciptakan hubungan persaudaraan yang erat dan menjalin kerja sama yang baik antar anggota FOSTI UMS, mengadakan pembelajaran untuk meningkatkan pengetahuan dan pemahaman tentang keorganisasian di FOSTI UMS serta mempersiapkan calon anggota baru FOSTI UMS untuk periode kepengurusan selanjutnya.',
       })
     }
     else if(division === 'hubpub'){
       setTxtModal({
         title:'Hubungan Publik',
-        description:'Divisi yang menjalin hubungan dan kerja sama dengan komunitas atau organisasi lain untuk mengenalkan dan menyebarkan open source dan juga FOSTI UMS ke dalam maupun ke luar lingkup universitas.',
+        description:'Divisi yang menjalin hubungan dan kerja sama dengan badan, lembaga, komunitas atau organisasi lain untuk mengenalkan dan menyebarkan open source dan juga FOSTI UMS ke dalam maupun ke luar lingkup universitas.',
       })
     }
   }

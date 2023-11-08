@@ -7,17 +7,17 @@ export default function Division() {
     {
       name: 'ristek',
       title:'Keilmuan & Riset Teknologi',
-      description:'Divisi yang mengulas dan mengimplementasikan teknologi saat ini'
+      description:'Divisi yang bertugas mempelajari, mengembangkan, dan mengajarkan teknologi'
     },
     {
       name: 'keor',
       title:'Keorganisaian',
-      description:'Divisi yang mengurus pengkaderan, internal dan juga event FOSTI '
+      description:'Divisi yang bertugas mempererat hubungan persaudaraan sesama keluarga FOSTI'
     },
     {
       name: 'hubpub',
       title:'Hubungan Publik',
-      description:'Divisi yang berkutat di bagian informasi dan media sosial FOSTI'
+      description:'Divisi yang bertugas menjadi media penghubung FOSTI dengan dunia luar'
     },
 
   ]
@@ -25,7 +25,7 @@ export default function Division() {
     <div className="snap-center min-h-screen text-center relative text-white flex lg:flex-row justify-center items-center lg:px-12" id="division">
       <Image fill={true} objectFit="cover" className="-z-10" src="/bg/bg-dark.svg" alt="Bg" />
       <div className="lg:flex flex-col justify-center items-center lg:flex-col lg:min-h-screen">
-        <div className="font-bold text-3xl sm:text-4xl sm:mt-0 mt-6 sm:mb-6">Division</div>
+        <div className="font-bold text-3xl sm:text-4xl sm:mt-0 mt-6 sm:mb-6">Divisi</div>
         <div className="lg:flex lg:flex-row flex-col grid-rows-3 gap-20">
           {
             dataCard&&(

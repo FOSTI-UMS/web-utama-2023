@@ -21,7 +21,7 @@ export default function Root() {
         <meta name="description" content="Unit kegiatan mahasiswa Fakultas Komunikasi dan Informatika Universitas Muhammadiyah Surakarta yang mempelajari, memperdalam, dan menyebarkan open source."/>
         <meta property="og:description" content="Unit kegiatan mahasiswa Fakultas Komunikasi dan Informatika Universitas Muhammadiyah Surakarta yang mempelajari, memperdalam, dan menyebarkan open source."/>
         <meta property="og:url" content="https://fostiums.org/" />
-        <meta property="og:image" content="./source/images/logo-fosti.webp"/>
+        <meta property="og:image" content="/logo-fosti.webp"/>
         <meta property="og:image:alt" content="Logo Fosti UMS"/>
         <meta property="og:type" content="website" />
         <meta property="webcrawlers" content="all"/>
